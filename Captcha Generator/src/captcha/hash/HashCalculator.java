@@ -1,6 +1,8 @@
 package captcha.hash;
 
-public interface HashCalculator {
+import java.io.Serializable;
+
+public interface HashCalculator extends Serializable {
 	
 	String calculateHash(String value);
 
