@@ -30,6 +30,14 @@ public class Captcha implements Serializable {
 		this(captchaText, "jpg");
 	}
 	
+	public Captcha(String captchaText, ImagePrinter printer) {
+		this(captchaText, "jpg", printer, new DefaultHashCalculator());
+	}
+
+	public Captcha(String captchaText, String imageType, ImagePrinter printer) {
+		this(captchaText, imageType, printer, new DefaultHashCalculator());
+	}
+	
 	public Captcha(String captchaText, String imageType) {
 		this(captchaText, imageType, new DefaultImagePrinter(), new DefaultHashCalculator());
 	}
