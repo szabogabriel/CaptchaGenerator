@@ -82,6 +82,10 @@ public class Captcha implements Serializable {
 	public int getImageHeight() {
 		return height;
 	}
+	
+	public String getStoredHash() {
+		return hashCode;
+	}
 
 	@Override
 	public int hashCode() {
