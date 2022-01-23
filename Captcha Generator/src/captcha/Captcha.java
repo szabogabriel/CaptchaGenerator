@@ -7,12 +7,12 @@ import java.io.OutputStream;
 
 import javax.imageio.ImageIO;
 
-import java.util.Base64;
-
 import captcha.hash.DefaultHashCalculator;
 import captcha.hash.HashCalculator;
 import captcha.printer.DefaultImagePrinter;
 import captcha.printer.ImagePrinter;
+
+import java.util.Base64;
 
 public class Captcha {
 

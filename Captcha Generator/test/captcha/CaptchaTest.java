@@ -5,6 +5,7 @@ import java.io.FileOutputStream;
 
 import org.junit.jupiter.api.Test;
 
+import captcha.Captcha;
 import captcha.hash.DefaultHashCalculator;
 import captcha.printer.DefaultImagePrinter;
 
