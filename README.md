@@ -21,7 +21,7 @@ if (captcha.isMatchingString(enteredStringFromUser) { // we cross check the inpu
 ```
 ## Custom providers and printers
 
-Custom implementation of image printers and hash calculators can be provided to the Captcha image.
+Custom implementation of image printers and hash calculators can be provided to the Captcha image. The `boolean` attribute in the `DefaultImagePrinter` sets whether stripes should be printed to the image or not.
 
 ```Java
 Captcha captcha = new Captcha("abcdefg", "png", new DefaultImagePrinter(true), new DefaultHashCalculator()); // Create PNG image with default providers
